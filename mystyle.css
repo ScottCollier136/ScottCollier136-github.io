@@ -3,7 +3,7 @@ div.title {
 }
 
 
-div.sidenav {
+.sidenav {
   height: 100%;
   width: 160px;
   position: fixed;
@@ -15,7 +15,7 @@ div.sidenav {
   padding-top: 20px;
 }
 
-div.sidenav a {
+.sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -23,6 +23,6 @@ div.sidenav a {
   display: block;
 }
 
-div.sidenav a:hover {
+.sidenav a:hover {
   color: #f1f1f1;
 }
