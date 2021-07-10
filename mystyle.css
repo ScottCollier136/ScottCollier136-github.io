@@ -26,3 +26,9 @@ div.title {
 .sidenav a:hover {
   color: #f1f1f1;
 }
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
