@@ -27,8 +27,11 @@ div.title {
   color: #f1f1f1;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+
+.dropped-dropdown {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
 }
 
 div.content {

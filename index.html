@@ -16,7 +16,7 @@
     <a href="#basicstufft">Basics</a>
 
     <button class="sidenav-drop">Basics</button>
-    <div class="basics-dropdown">
+    <div class="dropped-dropdown">
         <a href="#fizzbuzz">FizzBuzz</a>
     </div>
 
@@ -37,6 +37,27 @@
 
 
 <div id="root"></div>
+
+<script>
+    var dropdown = document.getElementsByClassName("sidenav-drop");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+
+</script>
+
+
+
 
 </body>
 </head>
