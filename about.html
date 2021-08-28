@@ -3,6 +3,7 @@
 <head>
 
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="import" href="sidebar.html">
 
     <div class="title">
         <h1> Welcome to my Webpage </h1>
@@ -16,28 +17,6 @@
 
 
 </div>
-
-
-
-
-<script>
-    var dropdown = document.getElementsByClassName("sidenav-drop");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-                dropdownContent.style.display = "none";
-            } else {
-                dropdownContent.style.display = "block";
-            }
-        });
-    }
-
-</script>
-
 
 
 
