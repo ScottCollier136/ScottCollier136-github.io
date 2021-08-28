@@ -3,20 +3,15 @@
 <head>
 
 <link rel="stylesheet" href="mystyle.css">
+<link rel="import" href="sidebar.html">
+
 
 
 <div class="title">
-    <h1> Scott Collier's Webpage 1 </h1>
+    <h1> Scott Collier's Webpage 2  </h1>
 </div>
 
 <body>
-
-<script>
-    var sidebar = document.querySelector('link[rel="import"]').import;
-</script>
-
-
-
 
 
 <div class="content">
@@ -32,7 +27,9 @@
 </div>
 
 
-
+<script>
+$( "#new-projects" ).load( "sidebar.html" );
+</script>
 
 
 
