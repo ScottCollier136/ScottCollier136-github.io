@@ -1,3 +1,15 @@
+<script>
+
+    $(function(){
+        $("#fizzbuzzPage").load("fizzbuzz.html");
+    });
+
+    function loadFizzBuzz() {
+        document.getElementById("content").innerHTML = fizzbuzzPage;
+    }
+
+</script>
+
 
 <div class="sidenav">
 
@@ -33,14 +45,6 @@
                 dropdownContent.style.display = "block";
             }
         });
-    }
-
-    $(function(){
-        $("#fizzbuzzPage").load("fizzbuzz.html");
-    });
-
-    function myFunction() {
-        document.getElementById("content").innerHTML = fizzbuzzPage;
     }
 
 </script>
