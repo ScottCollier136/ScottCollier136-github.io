@@ -6,7 +6,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <div class="title">
-        <h1> Scott Collier's Webpage 1</h1>
+        <h1> Scott Collier's Webpage 2</h1>
     </div>
 
 <body>
@@ -29,6 +29,7 @@ $(function(){
 
 
 <div id="content" class="content">
+    <button id="fizzbuzzButton" onclick="loadFizzBuzz()">FB</button>
 
     <img src="images/profile-pic.jpg" alt="A picture of me" style="width:200px;height:220px;">
 
@@ -66,8 +67,15 @@ $(function(){
     <p> Experience: This section is a more detailed description of my work experience.</p>
 </div>
 
+<script></script>
+$(function(){
+$("#fizzbuzzPage").load("fizzbuzz.html");
+});
 
-
+function loadFizzBuzz() {
+document.getElementById("content").innerHTML = fizzbuzzPage;
+}
+</script>
 
 
 
