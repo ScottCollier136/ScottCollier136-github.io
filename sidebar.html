@@ -6,6 +6,7 @@
 
     <button class="sidenav-drop">Basics</button>
     <div class="dropped-dropdown">
+        <button id="fizzbuzzButton" class="sidenav-drop" onclick="loadFizzBuzz">FB</button>
         <a href="portfolio/fizzbuzz.html">FizzBuzz</a>
     </div>
 
@@ -32,6 +33,14 @@
                 dropdownContent.style.display = "block";
             }
         });
+    }
+
+    $(function(){
+        $("#fizzbuzzPage").load("fizzbuzz.html");
+    });
+
+    function myFunction() {
+        document.getElementById("content").innerHTML = fizzbuzzPage;
     }
 
 </script>
