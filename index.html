@@ -4,11 +4,16 @@
 
 <link rel="stylesheet" href="mystyle.css">
 
+
 <div class="title">
-    <h1> Welcome to my Webpage </h1>
+    <h1> Scott Collier's Webpage </h1>
 </div>
 
 <body>
+
+<script>
+    var sidebar = document.querySelector('link[rel="import"]').import;
+</script>
 
 <div class="sidenav">
 
@@ -32,6 +37,9 @@
     <p id="pageContent2">If you are here, it is probably because I am applying to a job at your company.
         In which case, I have made this webpage to go into more detail about myself than I can in a single-page resume,
         and to show off basic programming skills and understanding.</p>
+    <p id="pageContent3"> About: This section is a brief overview of my education and job history</p>
+    <p id="pageContent4"> Experience: This section is a more detailed description of my work experience.</p>
+
 
 
 </div>
@@ -39,23 +47,7 @@
 
 
 
-<script>
-    var dropdown = document.getElementsByClassName("sidenav-drop");
-    var i;
 
-    for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-                dropdownContent.style.display = "none";
-            } else {
-                dropdownContent.style.display = "block";
-            }
-        });
-    }
-
-</script>
 
 
 
