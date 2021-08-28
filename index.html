@@ -3,12 +3,14 @@
 <head>
 
 <link rel="stylesheet" href="mystyle.css">
-<link rel="import" href="sidebar.html">
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
 
-<div class="title">
-    <h1> Scott Collier's Webpage 2  </h1>
+
+    <div class="title">
+    <h1> Scott Collier's Webpage 3  </h1>
 </div>
 
 <body>
@@ -26,12 +28,15 @@
 
 </div>
 
+<div id="sidebar">
+
+</div>
 
 <script>
-$( "#new-projects" ).load( "sidebar.html" );
+$(function(){
+  $("#sidebar").load("sidebar.html");
+});
 </script>
-
-
 
 
 
