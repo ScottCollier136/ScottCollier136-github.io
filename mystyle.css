@@ -60,8 +60,6 @@ div.code-snippet {
   max-height: 0;
   min-height: 500;
 
-display: table;
-
   overflow: auto;
   transition: max-height 0.2s ease-out;
 
@@ -85,7 +83,6 @@ display: table;
   transition: max-height 0.2s ease-out;
   overflow: auto;
 
-  display: table-row;
 }
 
 .active, .sub-collapsible:hover {
