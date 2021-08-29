@@ -89,6 +89,7 @@ div.code-snippet {
 .coll-content {
   padding: 0 18px;
   max-height: 0;
+  min-height: 500;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
@@ -97,6 +98,7 @@ div.code-snippet {
 .sub-coll-content {
   padding: 0 18px;
   max-height: 0;
+  min-height: 500;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
