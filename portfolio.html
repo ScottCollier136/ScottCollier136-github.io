@@ -21,11 +21,11 @@ $(function(){
 
 <div class="code-snippet">
 
-    <button class="collapsible">Basics 5</button>
+    <button class="collapsible">Basics 7</button>
 
     <div id="port1" class="coll-content">
 
-    <button class="sub-collapsible" onclick="increaseHeight(1000, 'port1')">FizzBuzz</button>
+    <button class="sub-collapsible" onclick="changeHeight(1000, 'port1')">FizzBuzz</button>
 
     <div class="sub-coll-content">
 
@@ -88,14 +88,22 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
   });
 }
 
 
-function increaseHeight(size, id) {
-
-    document.getElementById(id).style.height =  document.getElementById(id).scrollHeight + "px";
+function changeHeight(size, id) {
+    if (content.style.maxHeight){
+      document.getElementById(id).style.height =  document.getElementById(id).style.height - (2*size) + "px";
+    } else {
+      document.getElementById(id).style.height =  document.getElementById(id).style.height + size + "px";
+    }
 }
 
 
