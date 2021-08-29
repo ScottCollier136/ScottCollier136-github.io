@@ -59,6 +59,7 @@ div.code-snippet {
 
   max-height: 0;
   min-height: 500;
+  height: max-content;
   overflow: auto;
   transition: max-height 0.2s ease-out;
 
