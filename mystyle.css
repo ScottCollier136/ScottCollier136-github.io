@@ -58,7 +58,11 @@ div.code-snippet {
   font-size: 15px;
 
 
+
   height: auto;
+  max-height: 0;
+
+
   overflow: auto;
   transition: max-height 0.2s ease-out;
 
@@ -80,7 +84,11 @@ div.code-snippet {
   font-size: 15px;
 
 
+
   height: auto;
+  max-height: 0;
+
+
   transition: max-height 0.2s ease-out;
   overflow: auto;
 }
@@ -91,7 +99,11 @@ div.code-snippet {
 
 .coll-content {
   padding: 0 18px;
-height: auto;
+
+  height: auto;
+  max-height: 0;
+
+
   overflow: auto;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
@@ -99,7 +111,10 @@ height: auto;
 
 .sub-coll-content {
   padding: 0 18px;
-height: auto;
+
+  height: auto;
+  max-height: 0;
+
   overflow: auto;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
