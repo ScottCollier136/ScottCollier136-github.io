@@ -21,7 +21,7 @@ $(function(){
 
 <div class="code-snippet">
 
-    <button class="collapsible">Basics 8</button>
+    <button class="collapsible">Basics 2</button>
 
     <div id="port1" class="coll-content">
 
@@ -91,14 +91,17 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
+  document.getElementById("tester").innerHTML = this.parentNode.id;
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-      document.getElementById(this.parentNode.id).style.maxHeight = document.getElementById(this.parentNode.id).style.maxHeight.scrollHeight + "px";
-      document.getElementById(this.parentNode.id).style.height = document.getElementById(this.parentNode.id).style.height.scrollHeight + "px";
+
+      document.getElementById(this.parentNode.id).style.maxHeight = "500px";
+      document.getElementById(this.parentNode.id).style.height = "500px";
+
     }
   });
 }
