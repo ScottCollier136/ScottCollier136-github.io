@@ -21,8 +21,8 @@ $(function(){
 
 <div class="code-snippet">
 
-    <button type="button" class="collapsible">Open Section 1</button>
-    <div class="content">
+    <button class="collapsible">Basics</button>
+    <div class="coll-content">
         <h2>FizzBuzz</h2>
         <p>FizzBuzz is the quintessential programming test.</p>
         <p>The problem given is simple. When given an integer n, write a function that will iterate from 1 to n, writing each number out.
@@ -63,10 +63,10 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
     } else {
-      content.style.display = "block";
+      content.style.maxHeight = content.scrollHeight + "px";
     }
   });
 }
