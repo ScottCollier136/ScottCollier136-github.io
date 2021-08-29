@@ -21,7 +21,7 @@ $(function(){
 
 <div class="code-snippet">
 
-    <button class="collapsible">Basics 7</button>
+    <button class="collapsible">Basics 8</button>
 
     <div id="port1" class="coll-content">
 
@@ -99,7 +99,7 @@ for (i = 0; i < coll.length; i++) {
 
 
 function changeHeight(size, id) {
-    if (content.style.maxHeight){
+    if (document.getElementById(id).style.maxHeight){
       document.getElementById(id).style.height =  document.getElementById(id).style.height - (2*size) + "px";
     } else {
       document.getElementById(id).style.height =  document.getElementById(id).style.height + size + "px";
