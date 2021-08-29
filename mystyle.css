@@ -60,7 +60,7 @@ div.code-snippet {
 
 
   height: auto;
-  max-height: 0;
+  max-height: 1000px;
 
 
   overflow: auto;
@@ -86,7 +86,7 @@ div.code-snippet {
 
 
   height: auto;
-  max-height: 0;
+  max-height: 1000px;
 
 
   transition: max-height 0.2s ease-out;
@@ -101,7 +101,7 @@ div.code-snippet {
   padding: 0 18px;
 
   height: auto;
-  max-height: 0;
+  max-height: 1000px;
 
 
   overflow: auto;
@@ -113,7 +113,7 @@ div.code-snippet {
   padding: 0 18px;
 
   height: auto;
-  max-height: 0;
+  max-height: 1000px;
 
   overflow: auto;
   transition: max-height 0.2s ease-out;
