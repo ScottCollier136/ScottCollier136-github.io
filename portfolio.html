@@ -21,11 +21,11 @@ $(function(){
 
 <div class="code-snippet">
 
-    <button class="collapsible">Basics 9</button>
+    <button class="collapsible">Basics 1</button>
 
     <div id="port1" class="coll-content">
 
-    <button id="port2" class="sub-collapsible" onclick="increaseHeight(1000, 'port2')">FizzBuzz</button>
+    <button class="sub-collapsible" onclick="increaseHeight(1000, 'port1')">FizzBuzz</button>
 
     <div class="sub-coll-content">
 
@@ -99,8 +99,7 @@ for (i = 0; i < coll.length; i++) {
 
 
 function increaseHeight(size, id) {
-    //document.getElementById(id).height =  document.getElementById("demo").height + size + "px";
-    document.getElementById(id).innerHTML = "Hello";
+    document.getElementById(id).style.height =  document.getElementById("demo").height + size + "px";
 }
 
 
