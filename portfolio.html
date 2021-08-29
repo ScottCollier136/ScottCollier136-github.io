@@ -23,7 +23,7 @@ $(function(){
 
     <button class="collapsible">Basics</button>
 
-    <div>
+    <div class="content">
         <button class="sub-collapsible">FizzBuzz</button>
 
         <div class="coll-content">
@@ -59,39 +59,6 @@ $(function(){
         </div>
     </div>
 
-    <button class="sub-collapsible">FizzBuzz</button>
-
-    <div class="coll-content">
-        <h2>FizzBuzz</h2>
-        <p>FizzBuzz is the quintessential programming test.</p>
-        <p>The problem given is simple. When given an integer n, write a function that will iterate from 1 to n, writing each number out.
-            If that number is a multiple of 3, instead write "Fizz", and if it's a multiple of 5, write "Buzz".
-            Finally if it is a multiple of 3 and 5, write "FizzBuzz".</p>
-        <p>It is generally used to test understanding of conditionals.</p>
-
-        <pre>
-
-        public void FizzBuzz(int n){
-
-            int i;
-
-            for(i=1; i < n+1; i++){
-                if(((i % 3) == 0) && ((i % 5) == 0)){
-                    System.out.println("FizzBuzz");
-                }
-                else if((i % 3) == 0){
-                    System.out.println("Fizz");
-                }
-                else if((i % 5) == 0){
-                    System.out.println("Buzz");
-                }
-                else{
-                    System.out.println(i);
-                }
-            }
-        }
-        </pre>
-    </div>
 </div>
 
 <script>
