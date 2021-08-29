@@ -21,7 +21,7 @@ $(function(){
 
 <div class="code-snippet">
 
-    <button class="collapsible">Basics 1</button>
+    <button class="collapsible">Basics 2</button>
 
     <div id="port1" class="coll-content">
 
@@ -93,8 +93,8 @@ for (i = 0; i < coll.length; i++) {
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-      document.parentElement.style.maxHeight = document.parentElement.scrollHeight + "px";
-      document.parentElement.style.height = "1000px";
+
+      document.parentNode.style.height = "1000px";
 
     }
   });
