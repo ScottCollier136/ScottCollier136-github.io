@@ -21,11 +21,11 @@ $(function(){
 
 <div class="code-snippet">
 
-    <button class="collapsible">Basics 5</button>
+    <button id="port1" class="collapsible">Basics 3</button>
 
     <div class="coll-content">
 
-    <button class="sub-collapsible">FizzBuzz</button>
+    <button class="sub-collapsible"; onclick="increaseHeight(1000, port1)">FizzBuzz</button>
 
     <div class="sub-coll-content">
 
@@ -95,6 +95,11 @@ for (i = 0; i < coll.length; i++) {
       content.style.maxHeight = content.scrollHeight + "px";
     }
   });
+}
+
+
+function increaseHeight(size, id) {
+    document.getElementById(id).height =  document.getElementById("demo").height + size + "px";
 }
 
 
