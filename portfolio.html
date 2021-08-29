@@ -21,7 +21,7 @@ $(function(){
 
 <div class="code-snippet">
 
-    <button class="collapsible">Basics 2</button>
+    <button class="collapsible">Basics 4</button>
 
     <div id="port1" class="coll-content">
 
@@ -65,6 +65,8 @@ $(function(){
 
 </div>
 
+<p id="tester">Hello</p>
+
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -85,6 +87,7 @@ for (i = 0; i < coll.length; i++) {
 var coll = document.getElementsByClassName("sub-collapsible");
 var i;
 
+
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -93,9 +96,7 @@ for (i = 0; i < coll.length; i++) {
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-
-      document.parentNode.style.height = "1000px";
-
+      document.getElementById("tester").innerHTML = document.parentNode.id;
     }
   });
 }
