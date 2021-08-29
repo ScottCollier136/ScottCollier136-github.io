@@ -40,6 +40,12 @@ div.content {
   height: 1000px;
 }
 
+div.code-snippet {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
 .collapsible {
   background-color: #777;
   color: white;
