@@ -10,7 +10,7 @@ div.title {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #3366ff;
+  background-color: #002080;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -47,7 +47,7 @@ div.code-snippet {
 }
 
 .collapsible {
-  background-color: #777;
+  background-color: #99b3ff;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -57,8 +57,6 @@ div.code-snippet {
   outline: none;
   font-size: 15px;
 
-  max-height: 0;
-  min-height: 500;
 
   overflow: auto;
   transition: max-height 0.2s ease-out;
