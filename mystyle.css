@@ -64,7 +64,7 @@ div.code-snippet {
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #002b80;
 }
 
 .sub-collapsible {
