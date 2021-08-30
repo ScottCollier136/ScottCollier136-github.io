@@ -68,7 +68,7 @@ div.code-snippet {
 }
 
 .sub-collapsible {
-  background-color: #4d88ff;
+  background-color: #3377ff;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -84,7 +84,7 @@ div.code-snippet {
 }
 
 .active, .sub-collapsible:hover {
-  background-color: #002b80;
+  background-color: #002266;
 }
 
 .coll-content {
