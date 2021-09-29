@@ -24,7 +24,7 @@ $(function(){
 
 </script>
 
-<input type="text" onkeypress="restrictSpaceInput(event)">
+
 <script>
     function restrictSpaceInput(e){
         var enteredChar = e.which;
@@ -37,6 +37,8 @@ $(function(){
 <div id="content" class="content">
 
     <img src="images/profile-pic.jpg" alt="A picture of me" style="width:200px;height:220px;">
+
+    <input type="text" onkeypress="return restrictSpaceInput(event)">
 
     <p>Hello. Welcome to my Webpage</p>
     <p>If you are here, it is probably because I am applying to a job at your company.
