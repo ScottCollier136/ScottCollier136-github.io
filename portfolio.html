@@ -9,9 +9,7 @@
 
 
 
-<div id="sidebar">
-
-</div>
+<div id="sidebar"></div>
 
 <script>
 $(function(){
@@ -28,6 +26,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('#arrays').load("arrays.html");
+});
+
+$(function(){
+  $("#collapsible").load("collapsible.html");
 });
 </script>
 
@@ -48,53 +50,8 @@ I'll try to fix it at a later date -->
 
 </div>
 
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-
-}
-
-var coll = document.getElementsByClassName("sub-collapsible");
-var i;
-
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    var parContent = document.getElementById(this.parentNode.id);
-    if (content.style.maxHeight){
-
-      var newHeight = parContent.scrollHeight - content.scrollHeight;
-      parContent.style.maxHeight =  newHeight+"px";
-      parContent.style.height = newHeight+"px";
-
-      content.style.maxHeight = null;
-
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-
-      parContent.style.maxHeight = parContent.scrollHeight+content.scrollHeight+"px";
-      parContent.style.height = parContent.scrollHeight+content.scrollHeight+"px";
-
-    }
-  });
-}
-
-
-
-</script>
+<div id="collapsible"></div>
 
 </body>
 </head>
