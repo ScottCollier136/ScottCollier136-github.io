@@ -17,6 +17,10 @@
 $(function(){
   $("#sidebar").load("sidebar.html");
 });
+
+$(document).ready(function() {
+    $('#arrays').load("arrays.html");
+});
 </script>
 
 
@@ -157,76 +161,14 @@ I'll try to fix it at a later date -->
 
     <button class="collapsible">Arrays</button>
 
-    <div id="port3" class="coll-content">
-
-        <button class="sub-collapsible" >Find Duplicate Numbers</button>
-
-        <div class="sub-coll-content">
-
-            <h2>Find Duplicate Numbers</h2>
-            <p>This function takes in an integer array, and prints out what numbers are duplicated, and at what indexes.</p>
-
-            <pre>
-
-                //The odd spacing of the"<>"'s is due to html not liking them next to a character, and falsely reading a new element
-                public static void FindDuplicateNumbers(int[] array) {
-
-                    int i;
-
-                    HashMap< Integer, ArrayList< Integer >> myHash = new HashMap< Integer, ArrayList< Integer >>();
+    <div id="arrays"></div>
 
 
-                    for(i=0; i< array.length; i++){
-                        if(myHash.containsKey(array[i])) {
-                            myHash.get(array[i]).add(i);
-                        }
-                        else{
-                            myHash.put(array[i],new ArrayList< Integer >());
-                            myHash.get(array[i]).add(i);
-                        }
-                    }
 
-                    for(Map.Entry< Integer, ArrayList< Integer >> mapElement : myHash.entrySet() ){
-                        if(mapElement.getValue().size() > 1){
-                            System.out.println("The value " + mapElement.getKey() + " was duplicated at indexes " + mapElement.getValue());
-                        }
-                    }
-
-
-                }
-            </pre>
-        </div>
-
-
-        <button class="sub-collapsible" >Find Pair Sum</button>
-
-        <div class="sub-coll-content">
-
-            <h2>Find Pair Sum</h2>
-            <p>This function takes in an integer array, and prints out what the first occurrence of two numbers that add up to the desired sum.</p>
-
-            <pre>
-
-                //The odd spacing of the"<>"'s is due to html not liking them next to a character, and falsely reading a new element
-                public static void FindPairSum(int[] array, int sum) {
-
-                    int i;
-                    HashSet< Integer > mySet = new HashSet< Integer >();
-
-                    for(i=0;i < array.length;i++){
-                        mySet.add(array[i]);
-                        if(mySet.contains(sum - array[i])){
-                            System.out.println("The Sum of " + sum + " is obtainable by the two values of " + (sum-array[i]) + " and " + array[i]);
-                        }
-                    }
-
-                }
-            </pre>
-        </div>
-
-    </div>
 
 </div>
+
+
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
