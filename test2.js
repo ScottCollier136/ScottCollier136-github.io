@@ -1,10 +1,8 @@
-class Homepage extends React.Component {
-        render(){
-            return (
-
+export function Homepage(){
+        return (
                 <div>
 
-                    <p>Hello. Welcome to my Webpage 2</p>
+                    <p>Hello. Welcome to my Webpage 6</p>
                     <p>If you are here, it is probably because I am applying to a job at your company.
                         In which case, I have made this webpage to go into more detail about myself than I can in a single-page resume.
                         In lieu of a portfolio, I will be posting my solutions to what are considered common programming interview questions.
@@ -40,6 +38,4 @@ class Homepage extends React.Component {
                 </div>
 
             );
-
-        }
 }
