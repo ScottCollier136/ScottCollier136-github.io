@@ -5,17 +5,21 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script type="text/javascript" src="test2.js"></script>
+
 </head>
 <body>
+
+<script type="text/javascript" src="test2.js"></script>
 
 <div id="mydiv"></div>
 
 <div id="root"></div>
 
+<div id="root2"></div>
+
 <script type="text/babel">
       function Hello() {
-        return <h1>Hello World 3!</h1>;
+        return <h1>Hello World 4!</h1>;
       }
 
 function Homepage2(){
@@ -63,7 +67,9 @@ function Homepage2(){
 
       ReactDOM.render(<Hello />, document.getElementById('mydiv'))
 
-      ReactDOM.render(<Homepage2 />, document.getElementById('root'));
+      ReactDOM.render(<Homepage />, document.getElementById('root'));
+
+      ReactDOM.render(<Homepage2 />, document.getElementById('root2'));
 
     </script>
 
