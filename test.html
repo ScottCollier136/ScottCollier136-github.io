@@ -16,8 +16,8 @@
     <a href="experience.html">Experience</a>
     <a href="portfolio.html">Portfolio</a>
 
-    <button>Home</button>
-    <button>Experience</button>
+    <button onclick="renderExp()">Home</button>
+    <button onclick="renderExp()">Experience</button>
     <button>Portfolio</button>
 
 </div>
@@ -35,7 +35,7 @@
 <script type="text/babel">
 
       function Hello() {
-        return <h1>Hello World 9!</h1>;
+        return <h1>Hello World 2!</h1>;
       }
 
 function Homepage(){
@@ -80,7 +80,78 @@ function Homepage(){
             );
 }
 
-const myelement = 'test3.html';
+function Experience(){
+        return (
+                <div class="content">
+
+
+    <h2>Jarvis: June 2019 - June 2020</h2>
+    <h3>Toronto, Ontario</h3>
+    <p>My training at Jarvis lasted from June till October of 2019.
+        For this training I and a few others were brought in to go through learning classes, covering the basics of programming.</p>
+    <p>We learned things from bash script, to Java programming with Object-Orientated Principles, to the basics of how Big Data works.</p>
+    <p>After a certain amount of time I interviewed and was hired by CIBC's Toronto branch</p>
+
+    <h2>CIBC: Nov 2019 - June 2020</h2>
+    <h3>Toronto, Ontario</h3>
+    <p>My employment at CIBC lasted from November of 2019, to June of 2020, with all work being from home starting mid March. During this time, I worked on 2 projects.</p>
+    <p></p>
+
+    <h3>BDD (Business Data Domain) Scala Project:</h3>
+    <p>The first project I worked on involved the making of a new database. There was a team that wanted access to data they didn't have access to.
+        While there were two databases that had this data, for whatever reason it was decided to make a new database instead of giving this team permission.
+        I have been asked by several interviewers why this approach was taken, as it seems inefficient.
+        As far as I know, the reason was solely because CIBC liked to partition everything behind permissions.</p>
+    <p></p>
+    <p>The project itself was this. There are two pre-existing databases, A and B. The current configuration is that there is a data transfer from A to B.
+    We were tasked in making a database C, where C would be a midpoint for the team to read from. We would program a read from A to C, and then a write from C to B.
+    During this, there is a minor change in the data, I believe it had to do with date formatting, but I can't recall the specifics.
+    When I joined the project, the details of making the databases and configuring the transfers was already done or being finished by more senior developers.</p>
+    <p></p>
+    <p>The project itself was mainly programmed in Scala, also utilizing a bit of Spark.
+        This was actually the first time I've programmed in Scala, and had to learn it as I went.
+        I like to think it shows I am capable of picking up new technologies as I go.
+        We utilized Jira for tickets, Git for version control, and an Agile development style.
+        During this project I mainly developed unit tests for the data read functions,
+        and developed conditionals to handle reads depending on the size and time since the last one took place.
+        During this project a co-op student was hired, and I was tasked with looking after him.
+        This mainly involved helping him get set up and finding him tasks to do for the project.</p>
+    <p></p>
+
+    <h3>The Fraud Project:</h3>
+    <p>The second project I worked on was simply known as the "Fraud Project".
+        This project involved the software used to detect when a fraudulent transaction was made.
+        The software was third party, and the company wanted to update to a new version of it.
+        Unfortunately, this software only includes the detection aspect which generated fraud tickets, while the systems used to manage the tickets were self-made.
+        This wouldn't be a problem, except the new version of the software was considered a substantial step-up from the previous iteration,
+        and our custom front-end wasn't compatible. With the fraud management team wanting some improvements to their UI,
+        we were tasked with re-making the existing fraud-ticket interface as close as possible to its current form, while improving select elements.
+        There were a lot of different kinds of fraud tickets that were used, and a lot of other systems that would have to be linked to this one, both up- and down-stream.</p>
+    <p></p>
+    <p>While I was working on the project, I mainly worked with HTML, Javascript, and CSS. The focus at the time was generating the webpages and fill-able
+        forms that the fraud team would use, as well as the general look and design. We used Jira for tickets, Git for version control, and an Agile development style with 2-week sprints.
+        After we were all tasked with working from home, things were largely the same, after an adjustment period.
+        Unfortunately, I was let go before certain parts of this project could really take off, so I mostly contributed in a web-design aspect.</p>
+    <p></p>
+    <p>My work mostly consisted of creating pages and adjusting their looks to suit the clients, the fraud management team.
+        They were very particular with how certain things looked and what exact language was used.
+        Besides that there was a lot of work done on entry forms, with mandatory fields, checking for valid entries,
+        and auto-generating/changing certain fields based on what was inputted into others.
+        I was also sometimes tasked with mapping out the logic of the third-party software we used, to generate info for the fraud tickets.</p>
+
+
+</div>
+
+            );
+}
+
+function renderHome(){
+    ReactDOM.render(<Homepage />, document.getElementById('root'));
+}
+
+function renderExp(){
+    ReactDOM.render(<Experience />, document.getElementById('root'));
+}
 
       ReactDOM.render(<Hello />, document.getElementById('mydiv'))
 
