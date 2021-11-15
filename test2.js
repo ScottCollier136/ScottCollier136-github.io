@@ -1,4 +1,4 @@
-export function Homepage(){
+function Homepage(){
         return (
                 <div>
 
