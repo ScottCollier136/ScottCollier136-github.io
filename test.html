@@ -4,10 +4,13 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script>import Homepage from 'test2'</script>
 </head>
 <body>
 
 <div id="mydiv"></div>
+
 <div id="root"></div>
 
 <script type="text/babel">
@@ -17,61 +20,7 @@
 
       ReactDOM.render(<Hello />, document.getElementById('mydiv'))
 
-
-
-
-
-      class Homepage extends React.Component {
-        render(){
-            return (
-
-                <div>
-
-                    <img src="images/profile-pic.jpg" alt="A picture of me" style="width:200px;height:220px;">
-
-
-                    <p>Hello. Welcome to my Webpage</p>
-                    <p>If you are here, it is probably because I am applying to a job at your company.
-                        In which case, I have made this webpage to go into more detail about myself than I can in a single-page resume.
-                        In lieu of a portfolio, I will be posting my solutions to what are considered common programming interview questions.
-                        All of which will be programmed in Java.</p>
-                    <p></p>
-
-                    <h3>Contact Info:</h3>
-                    <p>Address: Milton, Ontario</p>
-                    <p>Email: colliers136@gmail.com</p>
-                    <p>Cell: 905-864-2279</p>
-
-                    <h3>Skills:</h3>
-                    <p>Languages: Java, C, C++, Python, Scala, HTML, Javascript, SQL</p>
-                    <p>Tools: Git, Jira, Maven, IntelliJ</p>
-                    <p></p>
-
-
-                    <h3>Education:</h3>
-                    <p>University of Guelph 2013-2018, Bachelor's Degree. Major: Computer Science, Minor: Mathematics</p>
-                    <p></p>
-
-                    <h3>Work:</h3>
-                    <p>I worked at Jarvis, a consulting/contracting agency in Toronto,
-                        with the goal of training prospective programmers to work with Big Data in the Banking industry.
-                        The training took several months, after which I was contracted to work at CIBC.
-                        I was to work there for 2 years, acting as a software developer.</p>
-                    <p>Unfortunately, the pandemic happened. I managed to stay on, working from home, but eventually I was let go due to downsizing.</p>
-                    <p></p>
-
-                    <h3>Sidebar Index:</h3>
-                    <p> Experience: This section is a more detailed description of my work experience.</p>
-
-                </div>
-
-                );
-
-        }
-      }
-
-
-ReactDOM.render(<Homepage />, document.getElementById('root'));
+      ReactDOM.render(<Homepage />, document.getElementById('root'));
 
     </script>
 
