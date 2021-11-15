@@ -15,7 +15,7 @@ div.title {
   padding-top: 20px;
 }
 
-.sidenav a, .sidenav-drop {
+.sidenav a, .sidenav-drop, button {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -23,7 +23,7 @@ div.title {
   display: block;
 }
 
-.sidenav a:hover, .dropdown-btn:hover {
+.sidenav a:hover, .dropdown-btn:hover, button:hover {
   color: #f1f1f1;
 }
 
