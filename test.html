@@ -9,8 +9,6 @@
 </head>
 <body>
 
-<script type="text/javascript" src="./test2.js"></script>
-
 <div id="mydiv"></div>
 
 <div id="root"></div>
@@ -19,17 +17,15 @@
 
 <script type="text/babel">
 
-    import {homepage } from './test2.js';
-
       function Hello() {
-        return <h1>Hello World 5!</h1>;
+        return <h1>Hello World 2!</h1>;
       }
 
-function Homepage2(){
+function Homepage(){
         return (
                 <div>
 
-                    <p>Hello. Welcome to my Webpage 6</p>
+                    <p>Hello. Welcome to my Webpage</p>
                     <p>If you are here, it is probably because I am applying to a job at your company.
                         In which case, I have made this webpage to go into more detail about myself than I can in a single-page resume.
                         In lieu of a portfolio, I will be posting my solutions to what are considered common programming interview questions.
@@ -65,14 +61,17 @@ function Homepage2(){
                 </div>
 
             );
-}
+        }
 
+    );
+
+const myelement = "test3.html";
 
       ReactDOM.render(<Hello />, document.getElementById('mydiv'))
 
-      ReactDOM.render(<Homepage2 />, document.getElementById('root2'));
+      ReactDOM.render(<Homepage />, document.getElementById('root'));
 
-      ReactDOM.render(<homepage />, document.getElementById('root'));
+      ReactDOM.render(myelement, document.getElementById('root2'));
 
     </script>
 
