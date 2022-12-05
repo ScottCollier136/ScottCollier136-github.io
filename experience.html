@@ -21,12 +21,38 @@ $(function(){
 <div class="content">
 
 
+    <h2>Autometrics: December 2021 - August 2022</h2>
+    <h3>Remote, Ontario</h3>
+    <p>Autometrics is a small company of around 10-20 people who deal in welding software. 
+        I was hired by Autometrics to re-work their backend using Apache Kafka and Python, and optimize the rest of their solution when I could. Their current solution wasn't scaling well</p>
+    <p>I mainly worked by myself during my time there, with some assistance from a senior developer whom I could ask questions about the current system.
+        While I was instructed to use Apache Kafka with Python, and was given some guidelines to follow as well as some requirements, 
+        in large part I was making a lot of decisions myself.</p>
+    <p>The tech-stack included: Python, Django, Javascript, Apache Kafka, MQTT, Postgres, Redis, Docker</p>
+    <p>To summarize what I did there. </p>
+        <ul>
+            <li>- I researched Kafka, it's viability, tested it, and reported on whether it was viable. </li>
+            <li>- I tested Kafka-Python libraries to see which one met our needs, and the viability of using it for both data transmittion as well as video.</li>
+            <li>- I tested the possibility of a Scala-based solution. </li>
+            <li>- I made it so data sent through the Kafka-Pipeline wold automatically be written into a Postgres database. </li>
+            <li>- I made it so data read by the existing MQTT server would be auto-read into the Kafka pipeline. </li>
+            <li>- I organized and simplified the existing database / class-diagram on our django solution. </li>
+            <li>- I made API's for all the new data, and connected them to the Javascript frontend. </li>
+            <li>- I made Python scripts to synchronize and derive data from the multiple data-streams being send through Kafka. </li>
+            <li>- I made custom kafka-transformations, so that all data that came in would generate other derived information. This was either through existing data, or Redis. </li>
+        </ul>
+
+
+
     <h2>Jarvis: June 2019 - June 2020</h2>
     <h3>Toronto, Ontario</h3>
-    <p>My training at Jarvis lasted from June till October of 2019.
-        For this training I and a few others were brought in to go through learning classes, covering the basics of programming.</p>
+    <p>Jarvis was a company whose goal was to train and contract out new junior programmers to banks for software development.
+        This was because, according to them, the banks were finding their new recruits didn't necessarily have the knowledge-base they need.
+        So Jarvis would train new employees and then we would have an interview with the bank as a final test to be hired by them.</p>
+        <p>My training at Jarvis lasted from June till October of 2019.
+        For this training I was brought in to go through learning classes, covering the basics of programming.</p>
     <p>We learned things from bash script, to Java programming with Object-Orientated Principles, to the basics of how Big Data works.</p>
-    <p>After a certain amount of time I interviewed and was hired by CIBC's Toronto branch</p>
+
 
     <h2>CIBC: Nov 2019 - June 2020</h2>
     <h3>Toronto, Ontario</h3>
@@ -35,23 +61,21 @@ $(function(){
 
     <h3>BDD (Business Data Domain) Scala Project:</h3>
     <p>The first project I worked on involved the making of a new database. There was a team that wanted access to data they didn't have access to.
-        While there were two databases that had this data, for whatever reason it was decided to make a new database instead of giving this team permission.
-        I have been asked by several interviewers why this approach was taken, as it seems inefficient.
-        As far as I know, the reason was solely because CIBC liked to partition everything behind permissions.</p>
+        While there were two databases that had this data, it was decided to make a new database for them to access this data for security reasons.
+    </p>
     <p></p>
     <p>The project itself was this. There are two pre-existing databases, A and B. The current configuration is that there is a data transfer from A to B.
     We were tasked in making a database C, where C would be a midpoint for the team to read from. We would program a read from A to C, and then a write from C to B.
-    During this, there is a minor change in the data, I believe it had to do with date formatting, but I can't recall the specifics.
+    During this, there is a minor change in the data in terms of its formatting.
     When I joined the project, the details of making the databases and configuring the transfers was already done or being finished by more senior developers.</p>
     <p></p>
     <p>The project itself was mainly programmed in Scala, also utilizing a bit of Spark.
         This was actually the first time I've programmed in Scala, and had to learn it as I went.
-        I like to think it shows I am capable of picking up new technologies as I go.
         We utilized Jira for tickets, Git for version control, and an Agile development style.
         During this project I mainly developed unit tests for the data read functions,
         and developed conditionals to handle reads depending on the size and time since the last one took place.
         During this project a co-op student was hired, and I was tasked with looking after him.
-        This mainly involved helping him get set up and finding him tasks to do for the project.</p>
+        This mainly involved helping him get set up, finding him tasks to do for the project, and walking him through my own programming and methodology.</p>
     <p></p>
 
     <h3>The Fraud Project:</h3>
@@ -64,10 +88,11 @@ $(function(){
         we were tasked with re-making the existing fraud-ticket interface as close as possible to its current form, while improving select elements.
         There were a lot of different kinds of fraud tickets that were used, and a lot of other systems that would have to be linked to this one, both up- and down-stream.</p>
     <p></p>
-    <p>While I was working on the project, I mainly worked with HTML, Javascript, and CSS. The focus at the time was generating the webpages and fill-able
+    <p>While I was working on the project, I mainly worked with HTML, Javascript, and CSS. The focus at the time was generating the webpages and fillable
         forms that the fraud team would use, as well as the general look and design. We used Jira for tickets, Git for version control, and an Agile development style with 2-week sprints.
+        When we completed a ticket, we would refer it to a testing team to verify that it was completed correctly, and that there were no bugs.
         After we were all tasked with working from home, things were largely the same, after an adjustment period.
-        Unfortunately, I was let go before certain parts of this project could really take off, so I mostly contributed in a web-design aspect.</p>
+        Unfortunately, I was let go before certain parts of this project could really take off, so I mostly contributed in a front-end aspect.</p>
     <p></p>
     <p>My work mostly consisted of creating pages and adjusting their looks to suit the clients, the fraud management team.
         They were very particular with how certain things looked and what exact language was used.
